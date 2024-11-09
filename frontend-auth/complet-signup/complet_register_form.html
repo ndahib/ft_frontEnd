@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./complet_singup.js" type="module"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1a202c',
+                        light: '#e2e8f0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-light flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md p-8 space-y-6 bg-gray-800 rounded-lg shadow-xl">
+        <h1 class="text-3xl font-bold text-center mb-8">hello continue Form</h1>
+        
+        <form id = "finished_sign_up_form" class="space-y-4">
+            <div>
+                <input id="usernameButton" type="test" placeholder="username" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+            </div>
+            <div>
+                <input id="PasswordButton" type="password" placeholder="password" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+            </div>
+            <div>
+                <input id="confirmPasswordButton" type="password" placeholder="confirm password" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-blue-500 focus:outline-none">
+            </div>
+            <div>
+                <button id="Submit" type="submit" class="w-full px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none">Continue</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
